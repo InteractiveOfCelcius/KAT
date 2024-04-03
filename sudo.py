@@ -5,7 +5,7 @@ Package made by psvks. Sudo for WINDOWS!
 def sudo(command):
     try:
         rawc = ' '.join(command)
-        print(f'rawc: {rawc}')
+        #print(f'rawc: {rawc}')
         ps_command = f"""
             $psi = New-Object System.Diagnostics.ProcessStartInfo
             $psi.FileName = "cmd.exe"
@@ -21,7 +21,6 @@ def sudo(command):
             $stdout = $p.StandardOutput.ReadToEnd()
             $stderr = $p.StandardError.ReadToEnd()
             Write-Host "$stdout"
-            Write-Host "$stderr"
         """
         result = subprocess.run(["powershell", "-Command", ps_command], check=True, capture_output=True, text=True)
         print(result.stdout)

@@ -53,7 +53,7 @@ def package():
                 print(f"Downloading package {package_name}...")
                 response = requests.get(package_url)
                 if response.status_code == 200:
-                    succes(f"Package {package_name} found.")
+                    success(f"Package {package_name} found.")
                     with open(package_file_path, 'w') as package_file:
                         package_file.write(response.text)
                     success(f"Package '{package_name}' downloaded and updated successfully.")

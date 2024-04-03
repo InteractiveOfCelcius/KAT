@@ -38,7 +38,8 @@ def package():
                     package_file_path = os.path.join(folder_path, f"{args[1]}.py")
                     with open(package_file_path, 'w') as package_file:
                         package_file.write(r.text)
-                        exec(r.text)
+                        exec(r.text).package()
+                        
                     success(f"Package '{args[1]}' downloaded and ready to use.")
                 else:
                     warn(f'package: {args[1]} does not exist.')

@@ -2,7 +2,7 @@
 KAT Package library made by Interactive Of Celcius and handled by them!
 """
 
-_KATVER = float('24.42')
+_KATVER = float('24.43')
 
 def KAT(args):
     if args:
@@ -28,7 +28,7 @@ def KAT(args):
                 with open(package_file_path, 'w') as package_file:
                     package_file.write(r.text)
                     exec(r.text)
-                succes(f"Package '{args[1]}' downloaded and ready to use.")
+                success(f"Package '{args[1]}' downloaded and ready to use.")
             else:
                 warn(f'package: {args[1]} does not exist.')
         if args[0] == 'update':
@@ -44,7 +44,7 @@ def KAT(args):
                 succes(f"Package {package_name} found.")
                 with open(package_file_path, 'w') as package_file:
                     package_file.write(response.text)
-                succes(f"Package '{package_name}' downloaded and updated successfully.")
+                success(f"Package '{package_name}' downloaded and updated successfully.")
                 warn('''=================WARNING===================
 Please restart KATLine to get the updated packages!
 ===========================================
@@ -58,7 +58,7 @@ Please restart KATLine to get the updated packages!
                 if os.path.exists(package_file_path):
                     print(f"Removing package {package_name}...")
                     os.remove(package_file_path)
-                    succes("Package removed. To get the commands removed please reload KATLine")
+                    success("Package removed. To get the commands removed please reload KATLine")
             else:
                 warn("You can't uninstall KAT")
 

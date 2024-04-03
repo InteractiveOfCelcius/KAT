@@ -2,7 +2,7 @@
 KAT Package library made by Interactive Of Celcius and handled by them!
 """
 
-_KATVER = float('24.44')
+_KATVER = float('24.45')
 _DATA = ["KAT", "Interactive Of Celcius"]
 
 

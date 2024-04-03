@@ -10,5 +10,5 @@ class NRV:
 	def GetKey(A,keyName):return A._NRV_DATA[keyName]
 	def DelKey(A,keyName):del A._NRV_DATA[keyName]
 def package():
-	def A():success('NRV API is loaded and ready for production use.')
+	def A(args):success('NRV API is loaded and ready for production use.')
 	registerCommand('nrv',A)

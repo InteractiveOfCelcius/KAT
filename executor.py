@@ -2,7 +2,7 @@
 """
 Execute python code inside the KATLine Enviroment
 """
-_DATA = ["package.executor.net", 'KAT Indrustries']
+_DATA = ["package.executor.net", 'KAT Indrustries', "24.03.1"]
 
 def package():
 	def execute(args):

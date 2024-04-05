@@ -2,16 +2,8 @@
 KAT Package library made by Interactive Of Celcius and handled by them!
 """
 
-_KATVER = float('24.46')
-_DATA = ["KAT", "Interactive Of Celcius"]
-
-
-
-
-
-
-
-
+_KATVER = float('24.47')
+_DATA = ["KAT", "Interactive Of Celcius", "24.03.1"]
 
 
 def package():

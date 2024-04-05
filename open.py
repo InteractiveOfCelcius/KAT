@@ -2,7 +2,7 @@
 open is a useful command to open the current path folder.
 """
 
-_DATA = ["open", "psvks"]
+_DATA = ["open", "psvks", "24.03.1"]
 
 
 def package():

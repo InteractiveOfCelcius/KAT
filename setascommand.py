@@ -1,6 +1,6 @@
 
-_DATA = ["example", "me"]
-_GLOBAL_VARS = NRV()
+_DATA = ["set.as.command", "Lotous", "24.03.1"]
+
 
 def ExecuteCommand(COMMAND, args):
 	if lower_word(COMMAND) in commands:
@@ -11,6 +11,8 @@ def package():
 	if isPackageInstalled('nrv') != True:
 		warn('example package error: Please install NRV API.')
 	else:
+		_GLOBAL_VARS = NRV()
+		
 		def set(args):
 			if args:
 				try:

@@ -1,11 +1,11 @@
 
 """
 Made by PSVKS. This code only works on KATLine.
-Last update: 03/04/2024
+Last update: 05/04/2024
 """
 
 
-_DATA = ["LoadCodeAPI", "psvks"]
+_DATA = ["LoadCodeAPI", "psvks", "24.03.1"]
 
 
 class LoadCode:

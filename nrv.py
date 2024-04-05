@@ -3,7 +3,7 @@ making things easier :p
 """
 
 
-_DATA=['nrv','Lotous']
+_DATA=['nrv','Lotous','24.03.1']
 class NRV:
 	def __init__(A):A._NRV_DATA={}
 	def SetKey(A,keyName,value):B=keyName;A._NRV_DATA[B]=value;return A._NRV_DATA[B]
